@@ -1,0 +1,617 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+#landing-backbutton {
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  top: 8.4vh;
+  left: 3.2vw;
+  background-color: white;
+}
+
+.landing-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.landing-container img:first-child {
+  width: 34vw;
+  height: auto;
+}
+
+#landing-text-logo {
+  width: 85.3vw;
+  height: auto;
+}
+
+.landing-text {
+  width: fit-content;
+  height: fit-content;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 4vw;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.landing-button {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 4vw;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  padding: 2vw;
+  border: white solid 0.1rem;
+  margin-top: 1vh;
+}
+
+.maharaja-heading {
+  width: 88vw;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 23vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.9vw;
+}
+
+.maharaja-title {
+  width: 83vw;
+  height: fit-content;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 5.3vw;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #0056d2;
+}
+
+.maharaja-subtitle {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: black;
+}
+
+.maharaja {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8.5vw;
+}
+
+.img-container img {
+  width: 42.4vw;
+  height: fit-content;
+}
+
+.maharaj-quote {
+  margin-top: 8.5vw;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maharaj-quote .quote {
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-size: 3.5vw;
+  line-height: fit-content;
+  letter-spacing: 0%;
+  width: 81vw;
+  height: fit-content;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.maharaj-quote .horizontal-line {
+  width: 83.2vw;
+  height: 0;
+  border: solid 0.13vw #a3a2bb;
+  margin-top: 4.3vw;
+}
+
+.maharaj-quote .maharaj {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-size: 4.3vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  color: #0056d2;
+  margin-top: 1.9vw;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 8.5vw;
+}
+
+.facts-heading {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 3.2vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 4.8vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0056d2;
+}
+
+.facts-subheading {
+  margin-top: 5.3vw;
+  padding: 0 3vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon-holder {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 1.3vw;
+}
+
+.icon-holder img {
+  height: 4.8vw;
+  width: 4.8vw;
+}
+
+.icon-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: black;
+}
+
+.fact {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: blue;
+  width: 93.6vw;
+  height: 19.2vw;
+  margin: 0 auto;
+  margin-top: 4.2vw;
+}
+
+.fact div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85vw;
+}
+
+.vertical-line {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  max-width: 1px;
+  left: 50%;
+  background-color: white;
+}
+
+.fact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: white;
+}
+
+.fact .key {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.4vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: white;
+}
+
+.growth {
+  margin-top: 8.5vw;
+  width: 100%;
+  height: fit-content;
+}
+
+.growth-title {
+  margin-left: 3.2vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0056d2;
+}
+
+.growth-content {
+  width: 85.8vw;
+  height: 61.3vw;
+  max-height: 61.3vw;
+  margin: 0 auto;
+  margin-top: 5.3vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.growth-icons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.growth-icon-holder {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4vw;
+}
+
+.growth-icon-holder img {
+  width: 18.9vw;
+  height: 18.4vw;
+}
+
+.growth-holder {
+  height: 24.5vw;
+  margin-left: 9.2vw;
+}
+
+.growth-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.7vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: black;
+}
+
+.collaborations {
+  margin-top: 5.3vw;
+}
+
+.collaborations-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.8vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 3.2vw;
+  color: #0056d2;
+}
+
+.collaborations-subheading {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0 4.5vw;
+  color: black;
+  margin-top: 3.2vw;
+}
+
+.collaborators {
+  width: 71vw;
+  height: 71vw;
+  margin: 0 auto;
+  margin-top: 4.2vw;
+  display: grid;
+  grid-template-columns: repeat(2, 35%);
+  column-gap: 30%;
+  row-gap: 25%;
+  padding: 5vw 2.5vw;
+}
+
+.collaborators img {
+  width: 100%;
+  height: fit-content;
+}
+
+.facilities {
+  margin-top: 5vw;
+}
+
+.facilities-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.8vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0056d2;
+  margin-left: 3.2vw;
+}
+
+.facilities-container {
+  width: 72.8vw;
+  margin: 0 auto;
+  margin-top: 8.5vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.3vw;
+}
+
+.facility {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4vw;
+}
+
+.facility img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.facility-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.3vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0056d2;
+}
+
+.facility-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  text-align: center;
+}
+
+.facility-button {
+  width: fit-content;
+  height: 9vw;
+  padding: 2.1vw 2.7vw;
+  margin: 0 auto;
+  margin-top: 5.3vw;
+  font-size: 3.5vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  background-color: #0056d2;
+  color: white;
+  border-radius: 0.1vw;
+}
+
+.approach {
+  width: 93.6vw;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 8.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.approach-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.8vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0056d2;
+}
+
+.approach-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  width: 91vw;
+  margin-top: 3.2vw;
+  padding-left: 1.3vw;
+}
+
+.approaches {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8.5vw;
+  width: 100%;
+  height: fit-content;
+  gap: 4vw;
+}
+
+.individual-approach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 28vw;
+  gap: 1.3vw;
+}
+
+.individual-approach img {
+  width: 11vw;
+  height: 11vw;
+}
+
+.approach-text {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.development {
+  width: 92.2vw;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 8.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.development-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.8vw;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0056d2;
+}
+
+.development-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  width: 91vw;
+  margin-top: 3.2vw;
+  padding-left: 1.3vw;
+}
+
+.development-content {
+  width: 90.6vw;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 6.4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.development-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4.3vw;
+  width: 100%;
+  height: fit-content;
+}
+
+.development-item img {
+  width: 15.2vw;
+  height: 15.2vw;
+}
+
+.development-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3.2vw;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #1f1f1f;
+  padding: 1vw 0;
+}
+
+.development-text-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.2vw;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0056d2;
+}
+
+.footer {
+  margin: 0 auto;
+  margin-top: 38.4vw;
+  margin-bottom: 10vw;
+  width: 93.6vw;
+  height: fit-content;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  padding: 2.7vw 0;
+}
+
+.footer-item p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 4.3vw;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #1f1f1f;
+}
+
+.footer-item img {
+  width: 5.3vw;
+  height: 5.3vw;
+}
+
+.footer-line {
+  width: 100%;
+  height: 0.05vh;
+  background-color: black;
+}
