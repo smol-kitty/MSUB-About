@@ -17,6 +17,14 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #0056d2;
+  position: relative;
+}
+
+.decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 #landing-backbutton {
@@ -25,7 +33,7 @@ body {
   height: 3vh;
   top: 8.4vh;
   left: 3.2vw;
-  background-color: white;
+  z-index: 3;
 }
 
 .landing-container {
@@ -39,11 +47,15 @@ body {
 .landing-container img:first-child {
   width: 34vw;
   height: auto;
+  z-index: 3;
+  background-color: #0056d2;
 }
 
 #landing-text-logo {
   width: 85.3vw;
   height: auto;
+  background-color: #0056d2;
+  z-index: 3;
 }
 
 .landing-text {
@@ -54,6 +66,8 @@ body {
   font-weight: 700;
   color: white;
   text-align: center;
+  z-index: 3;
+  background-color: #0056d2;
 }
 
 .landing-button {
@@ -65,6 +79,8 @@ body {
   padding: 2vw;
   border: white solid 0.1rem;
   margin-top: 1vh;
+  background-color: #0056d2;
+  z-index: 3;
 }
 
 .maharaja-heading {
