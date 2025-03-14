@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
+    <link rel="preload" href="Images/logos/MSUB.svg" as="image" />
+    <link rel="preload" href="Images/logos/MSUB-Text.svg" as="image" />
     <link rel="stylesheet" href="aboutUs.css" />
   </head>
   <body>
     <div class="landing">
-      <img class="decoration" src="Images/others/Clip path group.svg"/>
+      <img
+        class="decoration"
+        alt="decoration"
+        src="Images/others/Clip path group.svg"
+      />
       <img
         src="Images/icons/arrow-left.svg"
         id="landing-backbutton"
         alt="arrow-left"
         width="24"
         height="24"
+        loading="eager"
       />
       <div class="landing-container">
         <img
@@ -22,6 +29,7 @@
           alt="MSB Logo"
           width="129"
           height="141"
+          loading="eager"
         />
         <img
           src="Images/logos/MSUB-Text.svg"
@@ -29,6 +37,7 @@
           alt="MSUB Text"
           width="325"
           height="75"
+          loading="eager"
         />
         <p class="landing-text">
           NIRF RANKING : 90 (University)<br />101-150 (Overall)
