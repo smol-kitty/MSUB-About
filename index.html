@@ -14,14 +14,6 @@
         src="Images/others/Clip path group.svg"
         fetchpriority="high"
       />
-      <img
-        src="Images/icons/arrow-left.svg"
-        id="landing-backbutton"
-        alt="arrow-left"
-        width="24"
-        height="24"
-        loading="eager"
-      />
       <div class="landing-container">
         <img
           src="Images/logos/MSUB.webp"
@@ -41,10 +33,10 @@
         <p class="landing-text">
           NIRF RANKING : 90 (University)<br />101-150 (Overall)
         </p>
-        <div class="landing-button">View More</div>
+        <div class="landing-button" onclick="scroller()">View More</div>
       </div>
     </div>
-    <div class="maharaja">
+    <div class="maharaja" id="maharaja">
       <div class="maharaja-heading">
         <p class="maharaja-title">
           Welcome to The Maharaja Sayajirao University of Baroda
@@ -120,34 +112,33 @@
     <div class="growth">
       <p class="growth-title">The Growth of MSU</p>
       <div class="growth-content">
-        <div class="growth-icons">
-          <div class="growth-icon-holder">
-            <img
-              src="Images/medals/1.svg"
-              alt="2nd milestone"
-              width="71"
-              height="69"
-            />
-            <p class="growth-text">
-              The Maharaja Sayajirao University of Baroda (1949 Onward)
-            </p>
-          </div>
+        <div class="growth-holder">
           <img
-            class="growth-holder"
             src="Images/medals/holder.svg"
             alt="dotted line"
             width="2"
             height="119"
           />
-          <div class="growth-icon-holder">
-            <img
-              src="Images/medals/2.svg"
-              alt="1st milestone"
-              width="71"
-              height="69"
-            />
-            <p class="growth-text">Baroda College (1881 to 1949)</p>
-          </div>
+        </div>
+        <div class="growth-icon-holder">
+          <img
+            src="Images/medals/1.svg"
+            alt="2nd milestone"
+            width="71"
+            height="69"
+          />
+          <p class="growth-text">
+            The Maharaja Sayajirao University of Baroda (1949 Onward)
+          </p>
+        </div>
+        <div class="growth-icon-holder">
+          <img
+            src="Images/medals/2.svg"
+            alt="1st milestone"
+            width="71"
+            height="69"
+          />
+          <p class="growth-text">Baroda College (1881 to 1949)</p>
         </div>
       </div>
     </div>
@@ -226,7 +217,37 @@
             fitness and athletic pursuits.
           </p>
         </div>
-        <div class="facility-button">Show More</div>
+      </div>
+      <div id="facility-hidden">
+        <div class="facility">
+          <img
+            src="Images/icons/bulb.svg"
+            alt="bulb icon"
+            width="75"
+            height="75"
+          />
+          <p class="facility-title">Entrepreneurship Hub</p>
+          <p class="facility-content">
+            Support for innovation and startups, with resources, mentorship, and
+            funding opportunities.
+          </p>
+        </div>
+        <div class="facility">
+          <img
+            src="Images/icons/factory.svg"
+            alt="factory icon"
+            width="75"
+            height="75"
+          />
+          <p class="facility-title">Strong Industry Connections</p>
+          <p class="facility-content">
+            Collaborations with leading industries offer internships,
+            placements, and research opportunities.
+          </p>
+        </div>
+      </div>
+      <div class="facility-button-container">
+        <div class="facility-button" onclick="showtoggle()">Show More</div>
       </div>
     </div>
     <div class="approach">
@@ -321,45 +342,81 @@
     </div>
     <div class="footer">
       <div class="footer-item">
-        <p>About</p>
-        <img
-          src="Images/icons/arrow.svg"
-          alt="arrow icon"
-          width="20"
-          height="20"
-        />
+        <p>About University</p>
+        <a href="aboutUni.html"
+          ><img
+            src="Images/icons/arrow.svg"
+            alt="arrow icon"
+            width="20"
+            height="20"
+        /></a>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-item">
+        <p>About Faculty of Commerce</p>
+        <a href="aboutFacultyofCommerce.html"
+          ><img
+            src="Images/icons/arrow.svg"
+            alt="arrow icon"
+            width="20"
+            height="20"
+        /></a>
       </div>
       <div class="footer-line"></div>
       <div class="footer-item">
         <p>Founder & Legacy</p>
-        <img
-          src="Images/icons/arrow.svg"
-          alt="arrow icon"
-          width="20"
-          height="20"
-        />
+        <a href="founder.html">
+          <img
+            src="Images/icons/arrow.svg"
+            alt="arrow icon"
+            width="20"
+            height="20"
+        /></a>
       </div>
       <div class="footer-line"></div>
       <div class="footer-item">
         <p>Vision of MSU</p>
-        <img
-          src="Images/icons/arrow.svg"
-          alt="arrow icon"
-          width="20"
-          height="20"
-        />
+        <a href="vision.html">
+          <img
+            src="Images/icons/arrow.svg"
+            alt="arrow icon"
+            width="20"
+            height="20"
+        /></a>
       </div>
       <div class="footer-line"></div>
       <div class="footer-item">
         <p>Mission of MSU</p>
-        <img
-          src="Images/icons/arrow.svg"
-          alt="arrow icon"
-          width="20"
-          height="20"
-        />
+        <a href="mission.html">
+          <img
+            src="Images/icons/arrow.svg"
+            alt="arrow icon"
+            width="20"
+            height="20"
+        /></a>
       </div>
       <div class="footer-line"></div>
     </div>
+    <script>
+      let showstatus = false;
+      function scroller() {
+        document
+          .getElementById("maharaja")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+      function showtoggle() {
+        if (showstatus) {
+          showstatus = false;
+          document.getElementsByClassName("facility-button")[0].textContent =
+            "Show More";
+          document.getElementById("facility-hidden").classList.remove("show");
+        } else {
+          showstatus = true;
+          document.getElementsByClassName("facility-button")[0].textContent =
+            "Show Less";
+          document.getElementById("facility-hidden").classList.add("show");
+        }
+      }
+    </script>
   </body>
 </html>

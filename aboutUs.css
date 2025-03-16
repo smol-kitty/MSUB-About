@@ -237,6 +237,7 @@ body {
   height: 19.2vw;
   margin: 0 auto;
   margin-top: 4.2vw;
+  border-radius: 1.5vw;
 }
 
 .fact div {
@@ -298,15 +299,10 @@ body {
   margin: 0 auto;
   margin-top: 5.3vw;
   display: flex;
-  flex-direction: row;
-}
-
-.growth-icons {
-  height: 100%;
-  width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
+  position: relative;
 }
 
 .growth-icon-holder {
@@ -321,11 +317,20 @@ body {
 .growth-icon-holder img {
   width: 18.9vw;
   height: 18.4vw;
+  z-index: 2;
 }
 
 .growth-holder {
-  height: 24.5vw;
+  position: absolute;
+  height: 61.3vw;
+  width: 1vw;
   margin-left: 9.2vw;
+}
+
+.growth-holder img {
+  height: 61.3vw;
+  width: 0.5vw;
+  z-index: 1;
 }
 
 .growth-text {
@@ -394,7 +399,7 @@ body {
 }
 
 .facilities-container {
-  width: 72.8vw;
+  width: 100%;
   margin: 0 auto;
   margin-top: 8.5vw;
   height: fit-content;
@@ -405,12 +410,13 @@ body {
 }
 
 .facility {
-  width: 100%;
+  width: 72.8vw;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.4vw;
+  background-color: white;
 }
 
 .facility img {
@@ -437,12 +443,37 @@ body {
   text-align: center;
 }
 
+#facility-hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.3vw;
+  margin-top: 5.35vw;
+  max-height: 0;
+  transition: max-height 1s ease-in-out;
+}
+
+#facility-hidden.show {
+  max-height: 100vw;
+}
+
+.facility-button-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding-top: 5.3vw;
+  padding-bottom: 8.5vw;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+
 .facility-button {
   width: fit-content;
   height: 9vw;
   padding: 2.1vw 2.7vw;
   margin: 0 auto;
-  margin-top: 5.3vw;
   font-size: 3.5vw;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -457,9 +488,12 @@ body {
   width: 93.6vw;
   height: fit-content;
   margin: 0 auto;
-  margin-top: 8.5vw;
+  padding-bottom: 8.5vw;
   display: flex;
   flex-direction: column;
+  z-index: 10;
+  position: relative;
+  background-color: white;
 }
 
 .approach-title {
@@ -520,9 +554,11 @@ body {
   width: 92.2vw;
   height: fit-content;
   margin: 0 auto;
-  margin-top: 8.5vw;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
+  background-color: white;
 }
 
 .development-title {
@@ -595,7 +631,7 @@ body {
 
 .footer {
   margin: 0 auto;
-  margin-top: 38.4vw;
+  margin-top: 8.5vw;
   margin-bottom: 10vw;
   width: 93.6vw;
   height: fit-content;
