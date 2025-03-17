@@ -56,7 +56,8 @@ body {
   height: fit-content;
   background-color: white;
   border-radius: 2vw;
-  padding-bottom: 57.9vw;
+  padding-bottom: 8.5vw;
+  position: relative;
 }
 
 .image {
@@ -71,17 +72,17 @@ body {
 }
 
 .about-subtitle {
-  width: 83.2vw;
+  width: 95vw;
   text-align: center;
   margin: 0 auto;
   margin-top: 5.3vw;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 5.3vw;
+  font-size: 3.5vw;
   line-height: 125%;
   letter-spacing: 0;
   color: #0056d2;
-  margin-bottom: 20vw;
+  margin-bottom: 8.5vw;
 }
 
 .about-content {
@@ -101,4 +102,48 @@ body {
   width: 100%;
   height: auto;
   margin-top: 1.6vw;
+}
+
+.slider-container {
+  margin-top: 1vw;
+  width: 94vw;
+  height: 64vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3vw;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  border-radius: 3vw;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 1.6vw;
+  position: absolute;
+  top: 60vw;
+}
+
+.dot {
+  width: 2vw;
+  height: 2vw;
+  background-color: #333;
+  border-radius: 50%;
+  transition: background-color 0.5s;
+}
+
+.dot.active {
+  background-color: white;
 }

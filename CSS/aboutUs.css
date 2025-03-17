@@ -644,6 +644,20 @@ body {
   width: 100%;
   height: fit-content;
   padding: 2.7vw 0;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-item:hover {
+  color: black;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.footer-item:visited {
+  color: black;
+  text-decoration: none;
+  background-color: inherit;
 }
 
 .footer-item p {

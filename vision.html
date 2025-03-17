@@ -4,19 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About MSUB</title>
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
   </head>
   <body>
     <div class="container">
-      <a class="back-button" href="index.html"
-        ><img src="Images/icons/arrow-left.svg"
+      <a class="back-button" href="index.html#footer"
+        ><img src="Images/icons/arrow-left.svg" alt="back-button"
       /></a>
       <div class="about-top">
-        <p class="about-title">About MSUB</p>
+        <p class="about-title">Vision of MSU</p>
       </div>
       <div class="about-container">
-        <div class="image">
-          <img src="Images/others/Image.webp" />
+        <div class="slider-container">
+          <div class="slider">
+            <img src="Images/slider/1.webp" alt="Image 1" />
+            <img src="Images/slider/2.webp" alt="Image 2" />
+            <img src="Images/slider/3.webp" alt="Image 3" />
+            <img src="Images/slider/4.webp" alt="Image 4" />
+            <img src="Images/slider/1.webp" alt="Image 1" class="duplicate" />
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
         <p class="about-subtitle">Vision</p>
         <p class="about-content">
@@ -29,7 +41,8 @@
           culture.
         </p>
       </div>
-      <img src="Images/icons/bottom.svg" class="bottom" />
+      <img src="Images/icons/bottom.svg" class="bottom" alt="footer" />
     </div>
+    <script src="JS/script.js"></script>
   </body>
 </html>
